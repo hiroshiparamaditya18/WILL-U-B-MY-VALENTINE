@@ -12,13 +12,16 @@ body {
 .container {
     text-align: center;
     background-color: white;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 60px 80px;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
 }
 
 h1 {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    font-size: 32px;
 }
 
 .small-text {
@@ -26,12 +29,18 @@ h1 {
     color: gray;
 }
 
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
 .buttons button {
-    padding: 12px 25px;
-    font-size: 16px;
-    margin: 10px;
+    padding: 20px 50px;
+    font-size: 22px;
+    font-weight: bold;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     cursor: pointer;
     transition: 0.3s ease;
 }
@@ -43,6 +52,7 @@ h1 {
 
 #yesBtn:hover {
     background-color: #e63956;
+    transform: scale(1.1);
 }
 
 #noBtn {
@@ -51,11 +61,12 @@ h1 {
 
 #noBtn:hover {
     background-color: #aaaaaa;
+    transform: scale(1.1);
 }
 
 #response {
-    margin-top: 20px;
-    font-size: 18px;
+    margin-top: 30px;
+    font-size: 22px;
     font-weight: bold;
     color: #ff4d6d;
 }
