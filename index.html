@@ -1,26 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Be My Valentine</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: pink;
+            font-family: Arial;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        button {
+            padding: 20px 50px;
+            font-size: 24px;
+            margin: 20px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-
     <div class="container">
         <h1>
-            Will you be my valentine? <br>
-            <span class="small-text">(pls say yes bcs i didn't code what wld happen if u pressed no)</span>
+            Will you be my valentine?<br>
+            <small>(pls say yes bcs i didn't code what wld happen if u pressed no)</small>
         </h1>
 
-        <div class="buttons">
-            <button id="yesBtn">Yes</button>
-            <button id="noBtn">No</button>
-        </div>
-
-        <p id="response"></p>
+        <button onclick="alert('YAY ❤️')">Yes</button>
+        <button onclick="alert('Error 404: No not supported')">No</button>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
